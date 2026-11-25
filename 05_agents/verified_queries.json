@@ -1,0 +1,58 @@
+[
+  {
+    "question": "Show top 10 major disasters by total assistance registrations as a horizontal bar chart",
+    "sql": "SELECT title AS disaster_title, disaster_number, incident_type, total_registrations FROM DisasterSummary WHERE total_registrations > 0 ORDER BY total_registrations DESC LIMIT 10"
+  },
+  {
+    "question": "Show the top 10 major disasters by total assistance registrations as a horizontal bar chart",
+    "sql": "SELECT title AS disaster_title, disaster_number, incident_type, total_registrations FROM DisasterSummary WHERE total_registrations > 0 ORDER BY total_registrations DESC LIMIT 10"
+  },
+  {
+    "question": "Map the counties with the highest disaster assistance registrations",
+    "sql": "SELECT county_name, state_name, latitude, longitude, total_registrations FROM CountyReadiness WHERE total_registrations > 0 ORDER BY total_registrations DESC LIMIT 25"
+  },
+  {
+    "question": "Show a map of total assistance registrations by state",
+    "sql": "SELECT state_code, SUM(total_registrations) AS total_registrations FROM DisasterSummary WHERE total_registrations > 0 GROUP BY state_code ORDER BY total_registrations DESC"
+  },
+  {
+    "question": "Map the top priority unserved counties",
+    "sql": "SELECT county_name, state_name, latitude, longitude, social_vulnerability_score, total_registrations FROM CountyReadiness WHERE NOT has_team_coverage AND disasters_since_2023 >= 1 ORDER BY social_vulnerability_score DESC LIMIT 15"
+  },
+  {
+    "question": "Which disaster counties have the highest vehicle access deficit? Show top 10 as a bar chart",
+    "sql": "SELECT county_name, state_code, no_vehicle_pct, no_internet_pct, disasters_since_2023, total_registrations FROM CountyReadiness WHERE disasters_since_2023 >= 1 ORDER BY no_vehicle_pct DESC LIMIT 10"
+  },
+  {
+    "question": "Show the top 10 disaster counties with the lowest median household income",
+    "sql": "SELECT county_name, state_code, median_household_income_usd, poverty_pct, no_internet_pct, disasters_since_2023 FROM CountyReadiness WHERE disasters_since_2023 >= 1 AND median_household_income_usd > 0 ORDER BY median_household_income_usd ASC LIMIT 10"
+  },
+  {
+    "question": "Which counties have experienced the most disaster declarations since 2023?",
+    "sql": "SELECT county_name, state_code, disasters_since_2023, ihp_disasters_since_2023, total_registrations, web_registration_pct, social_vulnerability_score, has_team_coverage FROM CountyReadiness WHERE disasters_since_2023 >= 2 ORDER BY disasters_since_2023 DESC, social_vulnerability_score DESC LIMIT 10"
+  },
+  {
+    "question": "How does online registration compare between counties with low vs high internet access?",
+    "sql": "SELECT IF(no_internet_pct >= 15.0, 'Low Internet (>=15% without)', 'Standard/High Internet (<15% without)') AS connectivity_tier, COUNT(*) AS counties, SUM(total_registrations) AS total_registrations, ROUND(100 * SAFE_DIVIDE(SUM(web_registration_pct * total_registrations), SUM(total_registrations)), 1) AS web_registration_pct FROM CountyReadiness WHERE total_registrations >= 200 GROUP BY connectivity_tier"
+  },
+  {
+    "question": "Which major disasters had the highest total assistance registrations?",
+    "sql": "SELECT disaster_number, title, incident_type, declaration_date, state_code, designated_counties, total_registrations, web_share_pct FROM DisasterSummary WHERE total_registrations > 0 ORDER BY total_registrations DESC LIMIT 10"
+  },
+  {
+    "question": "Which high-vulnerability disaster counties have no mobile team coverage?",
+    "sql": "SELECT county_name, state_code, disasters_since_2023, no_internet_pct, social_vulnerability_score, total_registrations, web_registration_pct FROM CountyReadiness WHERE NOT has_team_coverage AND disasters_since_2023 >= 1 AND no_internet_pct >= 15.0 ORDER BY disasters_since_2023 DESC, social_vulnerability_score DESC LIMIT 10"
+  },
+  {
+    "question": "What does the current deployment plan look like?",
+    "sql": "SELECT dp.county_id, cp.county_name, cp.state_code, dp.action, dp.priority_tier, dp.status, dp.added_by, dp.added_at, dp.rationale FROM DeploymentPlan AS dp LEFT JOIN CountyProfile AS cp ON cp.county_id = dp.county_id ORDER BY dp.added_at DESC"
+  },
+  {
+    "question": "Show disaster declarations by incident type since 2023.",
+    "sql": "SELECT incident_type, COUNT(*) AS total_disasters, SUM(designated_counties) AS total_county_impacts, SUM(total_registrations) AS total_registrations FROM DisasterSummary GROUP BY incident_type ORDER BY total_disasters DESC"
+  },
+  {
+    "question": "What is the demographic and risk profile of Perry County, KY?",
+    "sql": "SELECT county_name, state_code, population, households, no_internet_pct, age_65_plus_pct, poverty_pct, nri_risk_score, social_vulnerability_score, disasters_since_2023, total_registrations, web_registration_pct, has_team_coverage FROM CountyReadiness WHERE county_name LIKE 'Perry County, KY%'"
+  }
+]

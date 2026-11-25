@@ -1,0 +1,217 @@
+{
+  "api_calls": 100,
+  "counts": {
+    "counties": 3144,
+    "divisions": 9,
+    "observations": 43633,
+    "regions": 4,
+    "states": 51
+  },
+  "facets": {
+    "country": {
+      "Count_Household": {
+        "facet_id": "5734463367141475879",
+        "isDcAggregate": true,
+        "latest": "2024",
+        "measurementMethod": "CensusACS5yrSurvey",
+        "provenanceId": "dc/base/CensusACS5YearSurvey_AggCountry",
+        "provenanceUrl": "https://www.census.gov/"
+      },
+      "Count_Household_NoInternetAccess": {
+        "facet_id": "5734463367141475879",
+        "isDcAggregate": true,
+        "latest": "2024",
+        "measurementMethod": "CensusACS5yrSurvey",
+        "provenanceId": "dc/base/CensusACS5YearSurvey_AggCountry",
+        "provenanceUrl": "https://www.census.gov/"
+      },
+      "Count_Person": {
+        "facet_id": "8912910856362438925",
+        "latest": "2025",
+        "measurementMethod": "CensusPEPSurvey",
+        "observationPeriod": "P1Y",
+        "provenanceId": "dc/base/USCensusPEP_Annual_Population",
+        "provenanceUrl": "https://www.census.gov/programs-surveys/popest.html"
+      },
+      "Count_Person_65OrMoreYears": {
+        "facet_id": "5734463367141475879",
+        "isDcAggregate": true,
+        "latest": "2024",
+        "measurementMethod": "CensusACS5yrSurvey",
+        "provenanceId": "dc/base/CensusACS5YearSurvey_AggCountry",
+        "provenanceUrl": "https://www.census.gov/"
+      },
+      "Count_Person_BelowPovertyLevelInThePast12Months": {
+        "facet_id": "5734463367141475879",
+        "isDcAggregate": true,
+        "latest": "2024",
+        "measurementMethod": "CensusACS5yrSurvey",
+        "provenanceId": "dc/base/CensusACS5YearSurvey_AggCountry",
+        "provenanceUrl": "https://www.census.gov/"
+      },
+      "Count_Person_WithDisability": {
+        "facet_id": "5734463367141475879",
+        "isDcAggregate": true,
+        "latest": "2024",
+        "measurementMethod": "CensusACS5yrSurvey",
+        "provenanceId": "dc/base/CensusACS5YearSurvey_AggCountry",
+        "provenanceUrl": "https://www.census.gov/"
+      }
+    },
+    "county": {
+      "Annual_ExpectedLoss_NaturalHazardImpact": {
+        "facet_id": "7442311476428098693",
+        "latest": "2000-01",
+        "provenanceId": "dc/base/USFEMA_NationalRiskIndex",
+        "provenanceUrl": "https://hazards.fema.gov/nri/",
+        "unit": "USDollar"
+      },
+      "Count_Household": {
+        "facet_id": "10169881228856630405",
+        "latest": "2024",
+        "measurementMethod": "CensusACS5yrSurvey",
+        "provenanceId": "dc/base/CensusACS5YearSurvey",
+        "provenanceUrl": "https://www.census.gov/programs-surveys/acs/data/data-via-ftp.html"
+      },
+      "Count_Household_NoInternetAccess": {
+        "facet_id": "10169881228856630405",
+        "latest": "2024",
+        "measurementMethod": "CensusACS5yrSurvey",
+        "provenanceId": "dc/base/CensusACS5YearSurvey",
+        "provenanceUrl": "https://www.census.gov/programs-surveys/acs/data/data-via-ftp.html"
+      },
+      "Count_Person": {
+        "facet_id": "8912910856362438925",
+        "latest": "2025",
+        "measurementMethod": "CensusPEPSurvey",
+        "observationPeriod": "P1Y",
+        "provenanceId": "dc/base/USCensusPEP_Annual_Population",
+        "provenanceUrl": "https://www.census.gov/programs-surveys/popest.html"
+      },
+      "Count_Person_65OrMoreYears": {
+        "facet_id": "10169881228856630405",
+        "latest": "2024",
+        "measurementMethod": "CensusACS5yrSurvey",
+        "provenanceId": "dc/base/CensusACS5YearSurvey",
+        "provenanceUrl": "https://www.census.gov/programs-surveys/acs/data/data-via-ftp.html"
+      },
+      "Count_Person_BelowPovertyLevelInThePast12Months": {
+        "facet_id": "10169881228856630405",
+        "latest": "2024",
+        "measurementMethod": "CensusACS5yrSurvey",
+        "provenanceId": "dc/base/CensusACS5YearSurvey",
+        "provenanceUrl": "https://www.census.gov/programs-surveys/acs/data/data-via-ftp.html"
+      },
+      "Count_Person_WithDisability": {
+        "facet_id": "17100443506100684676",
+        "latest": "2024",
+        "measurementMethod": "CensusACS5yrSurveySubjectTable",
+        "provenanceId": "dc/base/CensusACS5YearSurvey_SubjectTables_S1810",
+        "provenanceUrl": "https://data.census.gov/table/ACSST5Y2024.S1810?q=S1810"
+      },
+      "FemaCommunityResilience_NaturalHazardImpact": {
+        "facet_id": "612370306763475812",
+        "latest": "2000-01",
+        "provenanceId": "dc/base/USFEMA_NationalRiskIndex",
+        "provenanceUrl": "https://hazards.fema.gov/nri/",
+        "unit": "FemaNationalRiskScore"
+      },
+      "FemaNaturalHazardRiskIndex_NaturalHazardImpact": {
+        "facet_id": "612370306763475812",
+        "latest": "2000-01",
+        "provenanceId": "dc/base/USFEMA_NationalRiskIndex",
+        "provenanceUrl": "https://hazards.fema.gov/nri/",
+        "unit": "FemaNationalRiskScore"
+      },
+      "FemaNaturalHazardRiskIndex_NaturalHazardImpact_HurricaneEvent": {
+        "facet_id": "612370306763475812",
+        "latest": "2000-01",
+        "provenanceId": "dc/base/USFEMA_NationalRiskIndex",
+        "provenanceUrl": "https://hazards.fema.gov/nri/",
+        "unit": "FemaNationalRiskScore"
+      },
+      "FemaNaturalHazardRiskIndex_NaturalHazardImpact_RiverineFloodingEvent": {
+        "facet_id": "612370306763475812",
+        "latest": "2000-01",
+        "provenanceId": "dc/base/USFEMA_NationalRiskIndex",
+        "provenanceUrl": "https://hazards.fema.gov/nri/",
+        "unit": "FemaNationalRiskScore"
+      },
+      "FemaNaturalHazardRiskIndex_NaturalHazardImpact_WildfireEvent": {
+        "facet_id": "612370306763475812",
+        "latest": "2000-01",
+        "provenanceId": "dc/base/USFEMA_NationalRiskIndex",
+        "provenanceUrl": "https://hazards.fema.gov/nri/",
+        "unit": "FemaNationalRiskScore"
+      },
+      "FemaSocialVulnerability_NaturalHazardImpact": {
+        "facet_id": "612370306763475812",
+        "latest": "2000-01",
+        "provenanceId": "dc/base/USFEMA_NationalRiskIndex",
+        "provenanceUrl": "https://hazards.fema.gov/nri/",
+        "unit": "FemaNationalRiskScore"
+      }
+    },
+    "state": {
+      "Count_Household": {
+        "facet_id": "10169881228856630405",
+        "latest": "2024",
+        "measurementMethod": "CensusACS5yrSurvey",
+        "provenanceId": "dc/base/CensusACS5YearSurvey",
+        "provenanceUrl": "https://www.census.gov/programs-surveys/acs/data/data-via-ftp.html"
+      },
+      "Count_Household_NoInternetAccess": {
+        "facet_id": "10169881228856630405",
+        "latest": "2024",
+        "measurementMethod": "CensusACS5yrSurvey",
+        "provenanceId": "dc/base/CensusACS5YearSurvey",
+        "provenanceUrl": "https://www.census.gov/programs-surveys/acs/data/data-via-ftp.html"
+      },
+      "Count_Person": {
+        "facet_id": "8912910856362438925",
+        "latest": "2025",
+        "measurementMethod": "CensusPEPSurvey",
+        "observationPeriod": "P1Y",
+        "provenanceId": "dc/base/USCensusPEP_Annual_Population",
+        "provenanceUrl": "https://www.census.gov/programs-surveys/popest.html"
+      },
+      "Count_Person_65OrMoreYears": {
+        "facet_id": "10169881228856630405",
+        "latest": "2024",
+        "measurementMethod": "CensusACS5yrSurvey",
+        "provenanceId": "dc/base/CensusACS5YearSurvey",
+        "provenanceUrl": "https://www.census.gov/programs-surveys/acs/data/data-via-ftp.html"
+      },
+      "Count_Person_BelowPovertyLevelInThePast12Months": {
+        "facet_id": "10169881228856630405",
+        "latest": "2024",
+        "measurementMethod": "CensusACS5yrSurvey",
+        "provenanceId": "dc/base/CensusACS5YearSurvey",
+        "provenanceUrl": "https://www.census.gov/programs-surveys/acs/data/data-via-ftp.html"
+      },
+      "Count_Person_WithDisability": {
+        "facet_id": "10169881228856630405",
+        "latest": "2024",
+        "measurementMethod": "CensusACS5yrSurvey",
+        "provenanceId": "dc/base/CensusACS5YearSurvey",
+        "provenanceUrl": "https://www.census.gov/programs-surveys/acs/data/data-via-ftp.html"
+      }
+    }
+  },
+  "fetched_at": "2026-09-26T13:48:51+00:00",
+  "observations_per_variable": {
+    "Annual_ExpectedLoss_NaturalHazardImpact": 3144,
+    "Count_Household": 3196,
+    "Count_Household_NoInternetAccess": 3196,
+    "Count_Person": 6392,
+    "Count_Person_65OrMoreYears": 3196,
+    "Count_Person_BelowPovertyLevelInThePast12Months": 3196,
+    "Count_Person_WithDisability": 3196,
+    "FemaCommunityResilience_NaturalHazardImpact": 3144,
+    "FemaNaturalHazardRiskIndex_NaturalHazardImpact": 3144,
+    "FemaNaturalHazardRiskIndex_NaturalHazardImpact_HurricaneEvent": 2397,
+    "FemaNaturalHazardRiskIndex_NaturalHazardImpact_RiverineFloodingEvent": 3144,
+    "FemaNaturalHazardRiskIndex_NaturalHazardImpact_WildfireEvent": 3144,
+    "FemaSocialVulnerability_NaturalHazardImpact": 3144
+  }
+}

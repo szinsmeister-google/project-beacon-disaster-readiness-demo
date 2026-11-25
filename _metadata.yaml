@@ -1,0 +1,61 @@
+# yaml-language-server: $schema=./git-based-demos-schema.json
+file_type: demo
+type: application
+title: "Project Beacon: U.S. Disaster Readiness & Policy Intelligence on the Agentic Data Cloud"
+thumbnail_summary: Unify Google Data Commons and OpenFEMA across 3,144 counties with Spanner Graph (or Spanner Omni), BigQuery Apache Iceberg, Knowledge Catalog, 5.5x faster GEV ADK agents, and a Looker Data App.
+purpose: |
+  Built for **Public Sector Emergency Management Directors, Chief Data Officers, Federal Agency Architects, and Resilience Planners**, Project Beacon solves a critical disaster-response blind spot: 98% of assistance applications assume online portals, yet the highest-vulnerability counties have 22–35% of households offline with no vehicle.
+
+  During a live customer pitch or hands-on CE/developer lab, presenters trace **3,144 U.S. counties** across **Google Data Commons** and **OpenFEMA** inside **Spanner Graph** (`DCGraph` on Cloud Spanner or containerized **Spanner Omni**), join **BigLake Managed Apache Iceberg** hazard telemetry and unstructured FEMA Field SitRep PDFs in **BigQuery**, verify 12 statutory thresholds in **Knowledge Catalog**, run a **5.5x faster GEV System-One ADK agent**, and commit a **$250M Mobile DRC dispatch plan** directly back into Spanner from a **Material Design 3 Looker Data App**.
+business_value: |
+  * **Surface Invisible Communities in Under 10 Milliseconds:** Replaces multi-day manual GIS and census reconciliation with a single ISO GQL graph traversal identifying unserved Tier-1 counties (`SVI >= 75.0`, `No Internet >= 18.0%`).
+  * **Accelerate Agent Decision Velocity by 5.5x:** GEV (Judgment as Expected Value) 1-token logprob routing collapses conversational latency from ~18.0 seconds down to **3.30 seconds** while guaranteeing zero-drift executive charts.
+  * **Close the Loop from Policy Governance to Field Dispatch:** Enforces identical statutory FEMA/FCC/HHS thresholds across AI agents and Looker dashboards, enabling one-click `$250M` grant simulations and transactional fleet dispatch writes to Spanner.
+technical_value: |
+  * **Spanner Graph & Edge Spanner Omni Portability:** Runs identical GoogleSQL + ISO GQL property graph DDL (`DCGraph`: 39 nodes, 64 edges) on Managed Cloud Spanner or disconnected Docker **Spanner Omni** field kits.
+  * **Zero-ETL Borderless Lakehouse in BigQuery:** Joins Spanner operational records with **BigLake Managed Apache Iceberg** tables (`noaa_hazard_iceberg`, `fema_field_assessments_iceberg`) and GCS PDF **Object Tables** (`fema_field_sitrep_objects`) in 1.2 s.
+  * **GEV System-One ADK Agent:** Uses `max_output_tokens=1` logprob classifiers (`jev_noul` & `jev_choice`) and `JevGatedMcpToolset` to skip unnecessary MCP handshakes and render Altair visuals at `parts[0]`.
+  * **Argolis & Click-to-Deploy Kit:** Ships pre-fetched 3,144-county CSVs, Terraform (`click-to-deploy/`), Knowledge Catalog automation, LookML, M3 Looker Data App, and a 72-minute Codelab.
+owner: szinsmeister
+team_owner: "1279864166250"
+contributors:
+  - "1614535972486"
+  - "2033948602762"
+demo_guide: https://github.com/szinsmeister-google/project-beacon-disaster-readiness-demo/blob/main/DEMO_GUIDE.md
+products:
+  - cloud_spanner
+  - bigquery
+  - dataplex
+  - looker_google_cloud_core
+industries:
+  - public_sector_government
+  - all
+tags:
+  - project-beacon
+  - disaster-readiness
+  - data-commons
+  - spanner-graph
+  - spanner-omni
+  - borderless-lakehouse
+  - apache-iceberg
+  - knowledge-catalog
+  - google-adk
+  - gev-routing
+  - looker-data-apps
+  - agentic-data-cloud
+artifacts:
+  - title: GitHub Source Repository (Turnkey CE & Developer Kit)
+    type: code_repo
+    link: https://github.com/szinsmeister-google/project-beacon-disaster-readiness-demo
+  - title: Hands-On 72-Minute Developer Codelab
+    type: document
+    link: https://github.com/szinsmeister-google/project-beacon-disaster-readiness-demo/blob/main/codelab/index.lab.md
+  - title: Technical Architecture & Engineering Blueprint
+    type: blueprint
+    link: https://github.com/szinsmeister-google/project-beacon-disaster-readiness-demo/blob/main/docs/BLUEPRINT.md
+  - title: Argolis CE & go/demos Launch Guide
+    type: document
+    link: https://github.com/szinsmeister-google/project-beacon-disaster-readiness-demo/blob/main/docs/ARGOLIS_AND_GODEMOS_GUIDE.md
+featured_artifact_title: GitHub Source Repository (Turnkey CE & Developer Kit)
+# After registering on go/demos/demo/bulk and receiving your Demo ID (<ID>), uncomment:
+# click_to_deploy_path: <ID>-project-beacon-disaster-readiness-demo/tree/main/click-to-deploy

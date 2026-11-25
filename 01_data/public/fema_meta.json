@@ -1,0 +1,18 @@
+{
+  "api_base": "https://www.fema.gov/api/open/v2/",
+  "counts": {
+    "designations": 3399,
+    "disaster_county_edges": 3399,
+    "disasters": 263,
+    "registration_rows": 1032,
+    "total_valid_registrations": 5291171,
+    "unmatched_intake_rows": 3142
+  },
+  "disclaimer": "This product uses the Federal Emergency Management Agency's OpenFEMA API, but is not endorsed by FEMA. OpenFEMA data is subject to the OpenFEMA Terms and Conditions.",
+  "endpoints_used": [
+    "https://www.fema.gov/api/open/v2/DisasterDeclarationsSummaries",
+    "https://www.fema.gov/api/open/v2/RegistrationIntakeIndividualsHouseholdPrograms"
+  ],
+  "fetched_at": "2026-09-26T13:41:51+00:00",
+  "since_cutoff": "2023-01-01T00:00:00.000Z"
+}

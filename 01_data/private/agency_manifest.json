@@ -1,0 +1,11 @@
+{
+  "coverage_radius_miles": 75.0,
+  "generated_at": "2026-09-26T13:49:28+00:00",
+  "hubs": 6,
+  "teams": 42,
+  "total_agency_edges": 1127,
+  "total_agency_nodes": 48,
+  "total_coverage_edges": 1031,
+  "unique_counties_covered": 917,
+  "unique_counties_uncovered": 2227
+}

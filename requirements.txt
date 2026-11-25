@@ -1,0 +1,11 @@
+google-adk[a2a,mcp]==2.10.0
+google-auth==2.38.0
+google-cloud-aiplatform[adk,agent_engines]==2.2.0
+google-cloud-bigquery==3.29.0
+google-cloud-spanner==3.71.0
+google-cloud-storage==2.19.0
+google-genai==1.10.0
+python-dotenv==1.0.1
+requests==2.32.3
+pandas==2.2.3
+altair==5.5.0

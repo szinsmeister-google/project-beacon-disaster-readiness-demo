@@ -1,0 +1,7 @@
+{
+  "constraints/compute.requireOsLogin": true,
+  "constraints/compute.requireShieldedVm": true,
+  "constraints/iam.disableServiceAccountKeyCreation": true,
+  "constraints/storage.uniformBucketLevelAccess": true,
+  "constraints/run.allowedIngress": true
+}
